@@ -1,0 +1,9 @@
+{
+    "profiles": {
+        "Dev": {
+            "environmentVariables": {
+                "PORT": "3000"
+            }
+        }
+    }
+}
