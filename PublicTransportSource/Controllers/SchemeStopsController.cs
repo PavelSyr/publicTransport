@@ -1,10 +1,10 @@
-//https://transfer.msplus.ge:2443/otp/routers/ttc/schemeStops?routeNumber=476&backward=1
-
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PublicTransportSource.Core.Extensions;
+using PublicTransportSource.Core.Models.Dtos;
+using PublicTransportSource.Core.Services.Interfaces;
 using PublicTransportSource.Extensions;
 using PublicTransportSource.Models.Dtos;
-using PublicTransportSource.Services.Interfaces;
 
 namespace PublicTransportSource.Controllers;
 

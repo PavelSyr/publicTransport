@@ -1,9 +1,10 @@
-using PublicTransportSource.Clinets.Components;
-using PublicTransportSource.Models.RepositoryModels;
-using PublicTransportSource.Repositories;
-using PublicTransportSource.Repositories.Interfaces;
-using PublicTransportSource.Services;
-using PublicTransportSource.Services.Interfaces;
+using PublicTransportSource.Core.Clinets.Components;
+using PublicTransportSource.Core.Repositories.Interfaces;
+using PublicTransportSource.Core.Services.Interfaces;
+using PublicTransportSource.Tbilisi.Models;
+using PublicTransportSource.Tbilisi.Models.RepositoryModels;
+using PublicTransportSource.Tbilisi.Repositories;
+using PublicTransportSource.Tbilisi.Services;
 
 namespace PublicTransportSource.Extensions;
 
@@ -19,21 +20,22 @@ public static class ServicesExtensions
 
         services.AddScoped<IRouteRepository, TbilisiRouteRepository>();
         services.AddScoped<IRouteService, TbilisiRouteService>();
+        services.AddScoped<IRouteService, TbilisiRouteService>();
 
         services.AddScoped<ISchemeStopsRepository, TbilisiSchemeStopsRepository>();
         services.AddScoped<ISchemeStopsService, TbilisiSchemeStopsServices>();
-        services.AddScoped<IXmlDeserializer<RouteStops>, DefaultXmlDeserilizer<RouteStops>>();
+        services.AddScoped<IXmlDeserializer<TbilisiRouteStops>, DefaultXmlDeserilizer<TbilisiRouteStops>>();
 
         services.AddScoped<IRealtimeBusRepository, TbilisiRealtimeBusRepository>();
         services.AddScoped<IRealtimeBusService, TbilisiRealtimeBusService>();
-        services.AddScoped<IXmlDeserializer<BusList>, DefaultXmlDeserilizer<BusList>>();
+        services.AddScoped<IXmlDeserializer<TbilisiBusList>, DefaultXmlDeserilizer<TbilisiBusList>>();
 
         services.AddScoped<IRouteScheduleRepository, TbilisiRouteScheduleRepository>();
         services.AddScoped<IRouteScheduleService, TbilisiRouteScheduleService>();
-        services.AddScoped<IXmlDeserializer<Schedule>, DefaultXmlDeserilizer<Schedule>>();
+        services.AddScoped<IXmlDeserializer<TbilisiSchedule>, DefaultXmlDeserilizer<TbilisiSchedule>>();
 
         services.AddScoped<IArrivalTimeRepository, TbilisiArrivalTimeRepository>();
         services.AddScoped<IArrivalTimeService, TbilisiArrivalTimeService>();
-        services.AddScoped<IXmlDeserializer<ArrivalTimes>, DefaultXmlDeserilizer<ArrivalTimes>>();
+        services.AddScoped<IXmlDeserializer<TbilisiArrivalTimes>, DefaultXmlDeserilizer<TbilisiArrivalTimes>>();
     }
 }

@@ -1,8 +1,8 @@
 using AutoMapper;
+using PublicTransportSource.Core.Models;
 using PublicTransportSource.Extensions;
 using PublicTransportSource.Mappers;
 using PublicTransportSource.Models;
-
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,0 +1,11 @@
+###
+GET https://localhost:7256/ArrivalTime/stop/{{stopId}}
+
+###
+GET https://localhost:7256/Realtime/route/{{routeNumber}}
+
+###
+GET https://localhost:7256/Routes
+
+###
+GET https://localhost:7256/SchemeStops/route/{{routeNumber}}

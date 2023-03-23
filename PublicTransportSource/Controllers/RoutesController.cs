@@ -1,8 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using PublicTransportSource.Services.Interfaces;
-using PublicTransportSource.Models.Dtos;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using PublicTransportSource.Extensions;
+using PublicTransportSource.Core.Services.Interfaces;
+using PublicTransportSource.Core.Models.Dtos;
+using PublicTransportSource.Core.Extensions;
+using PublicTransportSource.Models.Dtos;
 
 namespace PublicTransportSource.Controllers;
 

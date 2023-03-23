@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Repositories\" />
+    <None Remove="Models\" />
+    <None Remove="Models\RepositoryModels\" />
+    <None Remove="Models\Dtos\" />
+    <None Remove="Clients\" />
+    <None Remove="Clients\Components\" />
+    <None Remove="Extensions\" />
+    <None Remove="Models\ServiceModels\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\RepositoryModels\" />
+    <Folder Include="Models\Dtos\" />
+    <Folder Include="Clients\" />
+    <Folder Include="Clients\Components\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Models\ServiceModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+</Project>
